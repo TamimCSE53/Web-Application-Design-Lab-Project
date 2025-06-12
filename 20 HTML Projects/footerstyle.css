@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+.div1{
+    height: 541px;
+    background-image: url(/background03.jpg);
+    padding-top: 25px;
+    padding-right: 70px;
+}
+
+.div1 .subdiv1{
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.div1 .subdiv1 a{
+    color: #a0a7ba;
+    text-decoration: none;
+    padding: 10px;
+    font-size: small;
+}
+
+.div1 .subdiv1 a:hover{
+    color:white;
+}
+
+
+.div1 .subdiv1 img{
+    height: 25px;
+    margin-right: 50%;
+}
+
+.div1 .line{
+    border: 0;
+    height: 1px;
+    margin-right: -70px;
+    background-color: aliceblue;
+    opacity: 10%;
+}
+
+.div1 .subdiv2{
+    margin-bottom: 30px;
+}
+
+.div1 .subdiv2 .chdiv1{
+    height: 330px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.div1 .subdiv2 .chdiv1 .gs1{
+    padding-left: 7%;
+    height: 320px;
+    width: 250px;
+    padding-top: 35px;
+    padding-right: -100px;
+}
+
+.div1 .subdiv2 .chdiv1 .gs2, .gs3{
+    height: 330px;
+    width: 320px; 
+    padding: 35px;
+    padding-left: 5%;
+}
+
+.div1 .subdiv2 .chdiv1 .gs3{
+    padding-left: 3%;
+}
+
+
+.div1 .subdiv2 .chdiv1 .gs1 a, .gs2 a, .gs3 a, .gs4 a{
+    display: block ;
+    text-decoration: none;
+    padding: 5px;
+    font-size: medium;
+    color: #b2b5c0;
+}
+
+.div1 .subdiv2 .chdiv1 .gs1 p, .gs2 p, .gs3 p, .gs4 p{
+    font-weight: 600;
+    font-style: normal;
+}
+.div1 .subdiv2 .chdiv1 .gs1 a:hover, .gs2 a:hover, .gs3 a:hover{
+    color: rgb(84, 84, 148);
+}
+
+.div1 .subdiv2 .chdiv1 .gs4{
+    height: 330px;
+    width: 365px; 
+    padding: 35px;
+    padding-left: 40px;
+}
+
+.div1 .subdiv2 .chdiv1 .gs4 .icon {
+    font-size: x-large;
+    color: aqua;
+    margin-bottom: 50px;
+}
+
+.div1 .subdiv2 .chdiv1 .gs4 .icon i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.div1 .subdiv2 .chdiv1 .gs4 .icon i:hover {
+    color: #000000;
+}
+
+.div1 .subdiv2 .chdiv1 .gs4 input{
+    border-radius: 20px;
+    padding-left: 20px;
+    width: 90%;
+    border: none;
+    height: 11%;
+    margin-top: 30px;
+}
+
+.div1 .subdiv3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.div1 .subdiv3 .ls1, .ls2{
+
+    width: 50%;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.div1 .subdiv3 .ls2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.div1 .subdiv3 .ls1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-left: 100px ;
+}
+
+.div1 .subdiv3 .ls2 a{
+    text-decoration: none;
+    color: #b2b5c0;
+    padding: 10px;
+    font-size: small;
+    margin-top: 30px;
+}
+
+.div1 .subdiv3 .ls1 p{
+    text-decoration: none;
+    color: #4A79AC;
+    font-size: small;
+    font-size: small;
+}
+
+.div1 .subdiv3 .ls1 a{
+    text-decoration: none;
+    color: #b2b5c0;
+    font-size: small;
+    font-size: small;
+}
+
+.div1 .subdiv3 .ls1 a:hover{
+    color: rgb(84, 84, 148);
+}
+
+i{
+    cursor: pointer;
+}
+
+.div1 .subdiv3 .ls2 a:hover {
+    color: rgb(84, 84, 148);
+}
+
+
+

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helptab</title>
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="helptab.css">
+    <link rel="stylesheet" href="footerstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+
+</head>
+<body>
+
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg shadow-0 border-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#!"><img src="/header-logo.png"</i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link"href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">About</a>
+                </li>
+                <!-- Candidates dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="candidatesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Candidates
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="candidatesDropdown">
+                        <li><a class="dropdown-item" href="/candidates.html">Browse Candidates</a></li>
+                        <li><a class="dropdown-item" href="#">Browse Companies</a></li>
+                        <li><a class="dropdown-item" href="#">Job Listing</a></li>
+                        <li><a class="dropdown-item" href="#">Job Details</a></li>
+                        <li><a class="dropdown-item" href="#">Job Categories</a></li>
+                        <li><a class="dropdown-item" href="#">Post a resume</a></li>
+                        <li><a class="dropdown-item" href="#">Candidate Dashboard</a></li>
+                    </ul>
+                </li>
+                <!-- Companies dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="companiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Companies
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="companiesDropdown">
+                        <li><a class="dropdown-item" href="#">Browse Companies</a></li>
+                        <li><a class="dropdown-item" href="#">Post a Job</a></li>
+                        <li><a class="dropdown-item" href="#">Employer Dashboard</a></li>
+                    </ul>
+                </li>
+                <!-- Blog dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                        <li><a class="dropdown-item" href="#">Blog Standard</a></li>
+                        <li><a class="dropdown-item" href="#">Blog list</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Images</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Videos</a></li>
+                    </ul>
+                </li>
+                <!-- Pages dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <li><a class="dropdown-item" href="#">Need Help?</a></li>
+                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        <li><a class="dropdown-item" href="#">Pricing Plans</a></li>
+                    </ul>
+                </li>
+                <!-- Get Started button -->
+                <div class="battan">
+                    <li class="nav-item">
+                        <a href="/postjob1.html">
+                            <button type="button" class="btn btn-primary ms-3" style="border-radius: 20px 0px 0px 20px;">Post a Job</button>
+                        </a>
+                </li>
+                <li style="margin-left: -5px;" class="nav-item">
+                    <a href="/signup.html"><button type="button" class="btn btn-primary ms-1" style="border-radius: 0px 20px 20px 0px; margin-right: 10px">Log In</button></a>
+                </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <hr style="margin-top: 5px;">
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="alldiv">
+
+        <div class="divodd">
+            <p>NAVIGATE</p>
+            <div class="chap" style="display: flex; flex-direction: column;">
+                <a href="#">Company</a>
+                <a href="#">How it works</a>
+                <a href="#">Team</a>
+                <p style="margin-top: 40px;">HELP</p>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Policies</a>
+                <a href="#">Terms of service</a>
+                <a href="#">Privacy policy</a>
+            </div>
+            
+        </div>
+        
+        
+        <div class="diveven">
+            <h1>Frequently asked questions</h1>
+            <h4>THE BASICS</h4>
+            <div style="background-color: #fff;" class="readmore">
+                <input id="ch" type="checkbox">
+                <label for="ch">
+                     <div class="hejob" style="display: flex; justify-content: space-between;">
+                        <h3>What is Jobpress</h3>
+                        <p style="font-size: large;">+</p>
+                     </div>
+                     <div class="line">
+                    </div>
+                </label>
+                 <div class="content">
+                    <label for="ch">
+                        <div class="hejob" style="display: flex; justify-content: space-between;">
+                            <h3>What is Jobpress</h3>
+                            <p style="font-size: large; color: black;">-</p>
+                         </div>
+                          <div class="line">
+                          </div>
+                            <p>
+                                Admiration we surrounded possession frequently he. Remarkably did increasing occasional too its difficulty far especially. Known tiled but sorry joy balls. Bed sudden manner indeed fat now feebly. Face do with in need of wife paid that be.
+                         </p>
+                    </label>                 
+                 </div>
+            </div>
+
+
+            <div style="background-color: #fff;" class="readmore">
+                <input id="ch2" type="checkbox">
+                <label for="ch2">
+                    <div class="hejob" style="display: flex; justify-content: space-between;">
+                        <h3>What're the benifits if I use it</h3>
+                        <p style="font-size: large;">+</p>
+                     </div>
+                     <div class="line">
+                    </div>
+                </label>
+                 <div class="content2">
+                    <label for="ch2">
+                        <div class="hejob" style="display: flex; justify-content: space-between;">
+                            <h3>What're the benifits if I use it</h3>
+                            <p style="font-size: large; color: black;">-</p>
+                         </div>
+                          <div class="line">
+                          </div>
+                            <p>
+                                Nullam semper erat arcu, ac tincidunt sem venenatis vel. Curabitur at dolor ac ligula fermentum euismod ac ullamcorper nulla. Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis. Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue.
+                         </p>
+                    </label>                 
+                 </div>
+            </div>
+
+
+            <div style="background-color: #fff;" class="readmore">
+                <input id="ch3" type="checkbox">
+                <label for="ch3">
+                    <div class="hejob" style="display: flex; justify-content: space-between;">
+                        <h3>How can I get started?</h3>
+                        <p style="font-size: large;">+</p>
+                     </div>
+                     <div class="line">
+                    </div>
+                </label>
+                 <div class="content3">
+                    <label for="ch3">
+                        <div class="hejob" style="display: flex; justify-content: space-between;">
+                            <h3>How can I get started?</h3>
+                            <p style="font-size: large; color: black;">-</p>
+                         </div>
+                          <div class="line">
+                          </div>
+                            <p>
+                                Admiration we surrounded possession frequently he. Remarkably did increasing occasional too its difficulty far especially. Known tiled but sorry joy balls. Bed sudden manner indeed fat now feebly. Face do with in need of wife paid that be.
+                         </p>
+                    </label>                 
+                 </div>
+            </div>
+
+            <h4>FOR EMPLOYERS</h4>
+            <div class="readmore">
+                <input id="ch4" type="checkbox">
+                <label for="ch4">
+                    <div class="hejob" style="display: flex; justify-content: space-between;">
+                        <h3>Do you have any free pricing plan?</h3>
+                        <p style="font-size: large;">+</p>
+                     </div>
+                     <div class="line2">
+                    </div>
+                </label>
+                 <div class="content4">
+                    <label for="ch4">
+                        <div class="hejob" style="display: flex; justify-content: space-between;">
+                            <h3>Do you have any free pricing plan?</h3>
+                            <p style="font-size: large; color: black;">-</p>
+                         </div>
+                          <div class="line2">
+                          </div>
+                            <p>
+                                Admiration we surrounded possession frequently he. Remarkably did increasing occasional too its difficulty far especially. Known tiled but sorry joy balls. Bed sudden manner indeed fat now feebly. Face do with in need of wife paid that be.
+                         </p>
+                    </label>                 
+                 </div>
+            </div>
+
+
+            <div class="readmore">
+                <input id="ch5" type="checkbox">
+                <label for="ch5">
+                    <div class="hejob" style="display: flex; justify-content: space-between;">
+                        <h3>How many job I can post?</h3>
+                        <p style="font-size: large;">+</p>
+                     </div>
+                     <div class="line2">
+                    </div>
+                </label>
+                 <div class="content5">
+                    <label for="ch5">
+                        <div class="hejob" style="display: flex; justify-content: space-between;">
+                            <h3>How many job I can post?</h3>
+                            <p style="font-size: large; color: black;">-</p>
+                         </div>
+                          <div class="line2">
+                          </div>
+                            <p>
+                                Nullam semper erat arcu, ac tincidunt sem venenatis vel. Curabitur at dolor ac ligula fermentum euismod ac ullamcorper nulla. Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis. Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue.
+                         </p>
+                    </label>                 
+                 </div>
+            </div>
+
+
+            <div class="readmore">
+                <input id="ch6" type="checkbox">
+                <label for="ch6">
+                    <div class="hejob" style="display: flex; justify-content: space-between;">
+                        <h3>Is there any dashboard that I can use to manage jobs/applications?</h3>
+                        <p style="font-size: large;">+</p>
+                     </div>
+                     <div class="line2">
+                    </div>
+                </label>
+                 <div class="content6">
+                    <label for="ch6">
+                        <div class="hejob" style="display: flex; justify-content: space-between;">
+                            <h3>Is there any dashboard that I can use to manage jobs/applications?</h3>
+                            <p style="font-size: large;color: black;">-</p>
+                         </div>
+                          <div class="line2">
+                          </div>
+                            <p>
+                                Admiration we surrounded possession frequently he. Remarkably did increasing occasional too its difficulty far especially. Known tiled but sorry joy balls. Bed sudden manner indeed fat now feebly. Face do with in need of wife paid that be.
+                         </p>
+                    </label>                 
+                 </div>
+            </div>
+
+            <h4>FOR CANDIDATES</h4>
+            <div style="background-color: #fff;" class="readmore">
+                <input id="ch7" type="checkbox">
+                <label for="ch7">
+                    <div class="hejob" style="display: flex; justify-content: space-between;">
+                        <h3>Do you have any free pricing plan?</h3>
+                        <p style="font-size: large;">+</p>
+                     </div>
+                     <div class="line">
+                    </div>
+                </label>
+                 <div class="content7">
+                    <label for="ch7">
+                        <div class="hejob" style="display: flex; justify-content: space-between;">
+                            <h3>Do you have any free pricing plan?</h3>
+                            <p style="font-size: large; color: black;">-</p>
+                         </div>
+                          <div class="line">
+                          </div>
+                            <p>
+                                Admiration we surrounded possession frequently he. Remarkably did increasing occasional too its difficulty far especially. Known tiled but sorry joy balls. Bed sudden manner indeed fat now feebly. Face do with in need of wife paid that be.
+                         </p>
+                    </label>                 
+                 </div>
+            </div>
+
+            <div style="background-color: #fff;" class="readmore">
+                <input id="ch8" type="checkbox">
+                <label for="ch8">
+                    <div class="hejob" style="display: flex; justify-content: space-between;">
+                        <h3>How many job I can apply for?</h3>
+                        <p style="font-size: large;">+</p>
+                     </div>
+                     <div class="line">
+                    </div>
+                </label>
+                 <div class="content8">
+                    <label for="ch8">
+                        <div class="hejob" style="display: flex; justify-content: space-between;">
+                            <h3>How many job I can apply for?</h3>
+                            <p style="font-size: large; color: black;">-</p>
+                         </div>
+                          <div class="line">
+                          </div>
+                            <p>
+                                Nullam semper erat arcu, ac tincidunt sem venenatis vel. Curabitur at dolor ac ligula fermentum euismod ac ullamcorper nulla. Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis. Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue.
+                         </p>
+                    </label>                 
+                 </div>
+            </div>
+
+            <div style="background-color: #fff;" class="readmore">
+                <input id="ch9" type="checkbox">
+                <label for="ch9">
+                    <div class="hejob" style="display: flex; justify-content: space-between;">
+                        <h3>Is there any dashboard that I can use to manage resume/applications?</h3>
+                        <p style="font-size: large;">+</p>
+                     </div>
+                     <div class="line">
+                    </div>
+                </label>
+                 <div class="content9">
+                    <label for="ch9">
+                        <div class="hejob" style="display: flex; justify-content: space-between;">
+                            <h3>Is there any dashboard that I can use to manage resume/applications?</h3>
+                            <p style="font-size: large;color: black;">-</p>
+                         </div>
+                          <div class="line">
+                          </div>
+                            <p>
+                                Admiration we surrounded possession frequently he. Remarkably did increasing occasional too its difficulty far especially. Known tiled but sorry joy balls. Bed sudden manner indeed fat now feebly. Face do with in need of wife paid that be.
+                         </p>
+                    </label>                 
+                 </div>
+            </div>
+            
+         </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="div1">
+
+        <div class="subdiv1">
+            <img src="/footer-logo.png">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">BROWSE JOB</a>
+            <a href="#">BROWSE CANDIDATES</a>
+            <a href="#">CONTACT</a>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="subdiv2">
+            <div class="chdiv1">
+                <div class="gs1">
+                    <p style="font-size: x-small;  margin-left: 5px; margin-bottom: 20px; color: #4A79AC;">ABOUT</p>
+                    <a href="#">Company</a>
+                    <a href="#">Our Partners</a>
+                    <a href="#">Blog</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Team</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="gs2">
+                    <p style="font-size: x-small; margin-left: 5px; margin-bottom: 20px; color: #4A79AC;">FOR CANDIDATES</p>
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Browse categories</a>
+                    <a href="#">Submit Resume</a>
+                    <a href="#">Candidate Dashboard</a>
+                    <a href="#">Job Alerts</a>
+                    <a href="#">My Bookmarks</a>
+                </div>
+                <div class="gs3">
+                    <p style="font-size: x-small; margin-left: 5px; margin-bottom: 20px; color: #4A79AC;">FOR COMPANIES</p>
+                    <a href="#">Browse Candidates</a>
+                    <a href="#">Company Dashboard</a>
+                    <a href="#">Add A Job</a>
+                    <a href="#">Packages</a>
+                </div>
+                <div class="gs4">
+                    <p style="font-size: x-small; margin-left: 5px; margin-bottom: 20px; color: #4A79AC;">FOLLOW US</p>
+                    <div class="icon">
+                        <i style="padding-left: 5px;" class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <p style="font-size: x-small; margin-left: 5px; margin-bottom: 20px; color: #4A79AC;">SUBSCRIBE US</p>
+                    <i style="color: #b2b5c0; cursor: text;">Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue.</i>
+                    <input style="margin-top: 20px; opacity: 100%;" type="text" placeholder="Your email">
+                    <i style="margin-left: 5px; color: rgb(88, 157, 167);" class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="subdiv3">
+            <div class="ls1">
+                <p>© 2017 <a href="#">JobPress</a>. All Rights Reserved. Designed by <a ;" href="#">LeoStudo</a>.</p>
+            </div>
+            <div class="ls2">
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERMS OF SERVICE</a>
+                <a href="#">CONDITIONS</a>
+            </div>
+            
+        </div>
+    </div>

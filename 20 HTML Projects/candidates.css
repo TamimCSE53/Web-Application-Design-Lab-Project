@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+.divs {
+    background-color: #1650E3;
+    color: white;
+    height: 150px;
+    width: 100%;
+    margin-top: 0px;
+    font-family: 'poppins', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 40px;
+    padding-left: 7%;
+}
+
+.divs a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.divs a:hover {
+    color: black;
+}
+
+.divs h2{
+    margin-top: -10px;
+}
+
+.whole{
+    background-color: #F0F3FA;
+    height: 1500px;
+    padding-top: 100px;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.whole .sub1{
+    height: 1000px;
+    width: 70%;
+    margin-left: 50px;
+
+}
+
+.whole .sub2{
+
+    height: 300px;
+    width: 20%;
+    font-size: x-small;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.whole .sub2 input{
+    height: 11%;
+    width: 100%;
+    margin: 20px;
+    margin-left: 0;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'poppins', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.whole .sub2 label {
+    opacity: 70%;
+}
+
+.whole .sub2 select{
+    margin: 20px;
+    height: 11%;
+    width: 100%;
+    margin-left: 0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    opacity: 90%;
+    padding-left: 10px;
+}
+
+.whole .sub1 .ch1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+}
+
+.whole .sub1 .ch1 .secdiv {
+    margin-left: 400px;
+}
+
+.whole .sub1 select{
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-left: 10px;
+    opacity: 90%;
+}
+
+.whole .sub1 .ch2 {
+    margin-top: 40px;
+    height: 970px;
+    margin-right: 60px;
+}
+
+.whole .sub1 .ch2 .can1 {
+    height: 220px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+
+.whole .sub1 .ch2 .can1 .can1sub1 {
+    height: 194px;
+    width: 20%;
+    margin-left: -20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whole .sub1 .ch2 .can1 .can1sub1 img {
+    border-radius: 100%;
+    height: 48%;
+}
+
+.whole .sub1 .ch2 .can1 .can1sub2 {
+    height: 194px;
+
+    width: 80%;
+}
+
+.whole .sub1 .ch2 .can1 .can1sub2 h3 {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.whole .sub1 .ch2 .can1 .can1sub2 h3:hover {
+    color: #4A79AC;
+}
+
+.whole .sub1 .ch2 .can1 .can1sub2 p {
+    font-size: small;
+    margin-top: 15px;
+}
+
+.line{
+    border: 0;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    opacity: 20%;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.whole .sub1 .ch2 .can1 .can1sub2 h2 {
+    position: absolute;
+    justify-content: end;
+}
+
+.whole .sub1 .ch2 .can1 .can1sub2 .fulldiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.whole .sub1 .ch2 .can1 .can1sub2 .fulldiv .fullch {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.whole .sub1 .ch2 .can1 .can1sub2 .fulldiv .fullch button {
+    background-color: #A0A7BA;
+    border: none;
+    font-size: x-small;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    height: 25px;
+    cursor: pointer;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.whole .lstdiv {
+
+    height: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.whole .lstdiv button {
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #1650E3;
+    color: white;
+    cursor: pointer;
+}
+
+.whole .lstdiv button:hover {
+    background-color: blue;
+}
+
+.whole .lstdiv .nxt a {
+    text-decoration: none;
+    color: #4A79AC;
+    margin: 8px;
+    margin-top: -2px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.whole .lstdiv .nxt a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+.div1 .subdiv1 {
+    margin-top: 2px;
+    margin-bottom: -30px;
+}
+
+.div1 .subdiv2 {
+    margin-top: 25px;
+    padding-bottom: 20px;
+}
+
+.div1 .subdiv3 {
+    padding-top: 20px;
+}
+
+
+

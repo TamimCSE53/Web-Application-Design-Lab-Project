@@ -1,0 +1,79 @@
+*{
+
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins';
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+}
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+color: #627199;
+}
+
+.container{
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  height: 50px;
+}
+.navbar-nav .li{
+  opacity: 30%;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+background-color: #ffffff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+color: #fdf2f2;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+background-color: #d81c1c;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+padding-top: auto;
+padding-bottom: auto;
+}
+.navbar-brand {
+font-size: unset;
+height: auto;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+background-color: #cecece; /* Background color of the dropdown menu */
+}
+
+.dropdown-item {
+color: black; /* Text color of dropdown items */
+font-weight: 500;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+background-color: #96a4b9; /* Background color of dropdown items on hover/focus */
+color: white;
+background: transparent;
+}
+
+.battan{
+  display: flex;
+  flex-direction: row; 
+}
+
+.battan::hover{
+  background-color: #0845a0;
+} 

@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F3FA;
+}
+
+.pjall {
+    height: 800px;
+    width: 60%;
+    background-color: #F0F3FA;
+    margin-left: 20%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pjall h3{
+    margin-left: 40%;
+}
+
+.pjall h6 {
+    margin-left: 34%;
+    margin-bottom: 50px;
+    opacity: 70%;
+}
+
+.pjall .prd-1 {
+    height: 170px;
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.pjall .prd-1 .ps-1-1 {
+    width: 15%;
+    height: 100%;
+    padding-top: 40px;
+}
+
+.pjall .prd-1 .ps-1-1 p {
+    background-color: #A0A7BA;
+    height: 30px;
+    width: 70px;
+    font-size: small;
+    padding: 5px;
+    padding-left: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.pjall .prd-1 .ps-1-2 {
+    width: 85%;
+    height: 100%;
+    padding-top: 40px;
+}
+
+.pjall .prd-1 .ps-1-2 p {
+    opacity: 70%;
+}
+
+.pjall .prd-1 .ps-1-2 ul {
+    opacity: 80%;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-left: 10px;
+}
+
+label {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+p{
+    padding: 10px;
+    font-size: small;
+}
+
+.pjall .prd-5 button {
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    background-color: blueviolet;
+    font-size: small;
+    font-weight: 600;
+    color: aliceblue;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+

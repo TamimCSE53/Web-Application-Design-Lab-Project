@@ -1,0 +1,88 @@
+.purata {
+    height: 1100px;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 100px;
+}
+
+.purata .alpha {
+    height: 40px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.purata .alpha div {
+    height: 100%;
+    width: 45px;
+    text-align: center;
+    padding-top: 6px;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+}
+
+.purata .alpha div:hover {
+    border-bottom: 2px solid blue;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.purata .alpha div a {
+    text-decoration: none;
+    color: #767199;
+    font-weight: 700;
+}
+
+.purata .alpha div a:hover {
+    color: blue;
+}
+
+.purata .comli {
+    height: 220px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.purata .comli .comli1 {
+    height: 100%;
+    width: 250px;
+}
+
+.purata .comli .comli1 .p {
+    height: 45px;
+    background-color: #F8F8F8;
+    padding-left: 25px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color:rgb(72, 94, 94);
+    font-weight: 500;
+}
+
+
+.purata .comli .comli1 .li {
+    height: 175px;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.purata .comli .comli1 .li p {
+    margin: 5px;
+    font-size: small;
+    color: #6271B3;
+    cursor: pointer;
+}
+
+.purata .comli .comli1 .li p:hover {
+    color: #001986;
+}

@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+.alldiv {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    margin-left: 120px;
+    height: 1400px;
+}
+
+.alldiv .divodd{
+    height: 500px;
+    width: 20%;
+}
+
+.alldiv .divodd p {
+    margin-bottom: 25px;
+    font-size: x-small;
+    font-weight: 800;
+    opacity: 60%;
+}
+
+.alldiv .divodd .chap a {
+    text-decoration: none;
+    color: #767199;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.alldiv .divodd .chap a:hover {
+    color: blueviolet;
+}
+
+
+.diveven{
+    height:1100px;
+    margin-top: -10px;
+    padding-left: 10px;
+    width: 75%;
+}
+
+.diveven h4{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    opacity: 60%;
+    font-weight: 600;
+    font-size: small;
+}
+
+.diveven h3 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.diveven .hejob:hover {
+    color: blueviolet;
+}
+
+#ch, #ch2, #ch3, #ch4, #ch5, #ch6, #ch7, #ch8, #ch9 {
+    display: none;
+}
+
+#ch:checked ~ .content, #ch3:checked ~ .content3, #ch9:checked ~ .content9{
+    display: block;
+    border: none;
+    height: 120px;
+    border-radius: 10px;
+}
+
+#ch2:checked ~ .content2, #ch4:checked ~ .content4, #ch8:checked ~ .content8{
+    display: block;
+    border: none;
+    height: 120px;
+    border-radius: 10px;
+}
+
+#ch2:checked ~ .content2 {
+    height: 150px;
+}
+
+
+#ch5:checked ~ .content5, #ch6:checked ~ .content6, #ch7:checked ~ .content7 {
+    display: block;
+    border: none;
+    height: 120px;
+    border-radius: 10px;
+}
+
+#ch5:checked ~ .content5 {
+    height: 170px;
+}
+
+#ch8:checked ~ .content8 {
+    height: 150px;
+}
+
+#ch:checked ~ label, #ch2:checked ~ label, #ch3:checked ~ label {
+    display: none;
+}
+
+#ch4:checked ~ label, #ch5:checked ~ label, #ch6:checked ~ label {
+    display: none;
+}
+
+#ch7:checked ~ label, #ch8:checked ~ label, #ch9:checked ~ label {
+    display: none;
+}
+
+.content, .content2, .content3, .content4, .content5, .content6, .content7, .content8, .content9 {
+    display: none;
+    color: #767199;
+    font-size: small;
+}
+
+.content h3, .content2 h3, .content3 h3, .content4 h3, .content5 h3, .content6 h3, .content7 h3, .content8 h3, .content9 h3 {
+    color: black;
+    font-size: 17px;
+}
+
+.content h3:hover, .content2 h3:hover, .content3 h3:hover, .content4 h3:hover, .content5 h3:hover, .content6 h3:hover, .content7 h3:hover, .content8 h3:hover, .content9 h3:hover {
+    color: blueviolet;
+}
+
+.diveven .line{
+    border: 0;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    opacity: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.diveven .line2{
+    border: 0;
+    height: 0px;
+    background-color: rgb(0, 0, 0);
+    opacity: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.diveven .readmore {
+    background-color: #F0F3FA;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 12px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div1 .subdiv1 {
+    margin-top: 2px;
+    margin-bottom: -10px;
+}
+
+.div1 .subdiv2 {
+    padding-bottom: 20px;
+}
+
+.div1 .subdiv3 {
+    margin-top: -10px;
+}
+
+
+
