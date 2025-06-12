@@ -1,2 +1,5 @@
-# Web-Application-Design-Lab-Project
-University lab project
+Project Name: Job Campanion: Web Application Design (CSE 256), UITS
+
+Team Members: KM Jakaria (ID: 037) Tamim Hossain (ID: 039) Imran Islam (ID: 042) Sumon Mia (ID: 048)
+
+Project Description: Job Companion is a web-based job portal developed as a course project for the Web Application Design course in the 3rd semester at UITS. This platform is designed to simplify the job search process by allowing users to explore job listings, apply for positions, and connect with potential employers.It supports features such as posting jobs by companies, searching and filtering job opportunities by candidates, and showcasing multiple companies and a large pool of applicants. The system is built using HTML, CSS, and Bootstrap, with a focus on clean design and responsive layout. Although still a work in progress and not fully polished, Job Companion reflects the foundational understanding of web development and user interface design gained during the course. Some UI ideas were supported by online references and tools, but the overall design and structure were developed independently. Future improvements are planned to enhance interactivity and functionality as part of the learning journey.
