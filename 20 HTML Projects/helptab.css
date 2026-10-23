@@ -14,7 +14,8 @@ body {
     flex-direction: row;
     margin: 5%;
     margin-left: 120px;
-    height: 1400px;
+    height: auto;
+    min-height: 100vh;
 }
 
 .alldiv .divodd{
@@ -43,7 +44,7 @@ body {
 
 
 .diveven{
-    height:1100px;
+    height: auto;
     margin-top: -10px;
     padding-left: 10px;
     width: 75%;
@@ -66,42 +67,65 @@ body {
     color: blueviolet;
 }
 
+.diveven .hejob {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.diveven .hejob h3 {
+    margin: 0;
+    color: #263342;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.diveven .hejob p {
+    display: grid;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    place-items: center;
+    border-radius: 50%;
+    background: #e8f2f1;
+    color: #176b60;
+    font-size: 1.15rem !important;
+    line-height: 1;
+}
+
 #ch, #ch2, #ch3, #ch4, #ch5, #ch6, #ch7, #ch8, #ch9 {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 #ch:checked ~ .content, #ch3:checked ~ .content3, #ch9:checked ~ .content9{
     display: block;
     border: none;
-    height: 120px;
-    border-radius: 10px;
+    height: auto;
 }
 
 #ch2:checked ~ .content2, #ch4:checked ~ .content4, #ch8:checked ~ .content8{
     display: block;
     border: none;
-    height: 120px;
-    border-radius: 10px;
-}
-
-#ch2:checked ~ .content2 {
-    height: 150px;
+    height: auto;
 }
 
 
 #ch5:checked ~ .content5, #ch6:checked ~ .content6, #ch7:checked ~ .content7 {
     display: block;
     border: none;
-    height: 120px;
-    border-radius: 10px;
-}
-
-#ch5:checked ~ .content5 {
-    height: 170px;
-}
-
-#ch8:checked ~ .content8 {
-    height: 150px;
+    height: auto;
 }
 
 #ch:checked ~ label, #ch2:checked ~ label, #ch3:checked ~ label {
@@ -118,8 +142,79 @@ body {
 
 .content, .content2, .content3, .content4, .content5, .content6, .content7, .content8, .content9 {
     display: none;
+    height: auto;
+    padding: 0 18px 18px;
     color: #767199;
     font-size: small;
+    line-height: 1.7;
+    animation: faq-answer-in 180ms ease-out;
+}
+
+.diveven .readmore {
+    margin: 0 0 12px;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #dce2ec;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.diveven .readmore > input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.diveven .readmore > label:first-of-type {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 16px 18px;
+    background: #fff;
+}
+
+.diveven .readmore > label:first-of-type:hover .hejob h3,
+.diveven .readmore > input:focus-visible + label .hejob h3 {
+    color: #176b60;
+}
+
+.diveven .readmore > input:focus-visible + label {
+    outline: 3px solid #176b60;
+    outline-offset: -3px;
+}
+
+.content .hejob,
+.content2 .hejob,
+.content3 .hejob,
+.content4 .hejob,
+.content5 .hejob,
+.content6 .hejob,
+.content7 .hejob,
+.content8 .hejob,
+.content9 .hejob {
+    margin-bottom: 10px;
+}
+
+.content label,
+.content2 label,
+.content3 label,
+.content4 label,
+.content5 label,
+.content6 label,
+.content7 label,
+.content8 label,
+.content9 label {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes faq-answer-in {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .content h3, .content2 h3, .content3 h3, .content4 h3, .content5 h3, .content6 h3, .content7 h3, .content8 h3, .content9 h3 {
@@ -193,6 +288,71 @@ label {
 
 .div1 .subdiv3 {
     margin-top: -10px;
+}
+
+@media (max-width: 767px) {
+    .alldiv {
+        display: block;
+        height: auto;
+        margin: 24px 16px;
+    }
+
+    .alldiv .divodd,
+    .diveven {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .alldiv .divodd {
+        margin-bottom: 32px;
+    }
+
+    .alldiv .divodd .chap {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
+
+    .diveven h1 {
+        font-size: 1.7rem;
+    }
+
+    .diveven .readmore {
+        margin: 0 0 12px;
+        padding: 0;
+    }
+
+    .diveven label {
+        margin-top: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .content,
+    .content2,
+    .content3,
+    .content4,
+    .content5,
+    .content6,
+    .content7,
+    .content8,
+    .content9 {
+        height: auto !important;
+        max-height: none;
+    }
+
+    .content p,
+    .content2 p,
+    .content3 p,
+    .content4 p,
+    .content5 p,
+    .content6 p,
+    .content7 p,
+    .content8 p,
+    .content9 p {
+        overflow-wrap: anywhere;
+    }
 }
 
 

@@ -52,6 +52,13 @@ font-size: unset;
 height: auto;
 }
 
+.navbar-brand img {
+display: block;
+width: clamp(130px, 42vw, 160px);
+max-width: calc(100vw - 100px);
+height: auto;
+}
+
 /* Dropdown menu */
 .dropdown-menu {
 background-color: #cecece; /* Background color of the dropdown menu */

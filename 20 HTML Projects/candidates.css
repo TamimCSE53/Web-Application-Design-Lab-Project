@@ -269,5 +269,100 @@ body {
     padding-top: 20px;
 }
 
+@media (max-width: 767px) {
+    .whole {
+        height: auto;
+        padding: 24px 16px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .whole .sub1,
+    .whole .sub2 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .whole .sub1 .ch1 {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .whole .sub1 .ch1 .secdiv {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .whole .sub1 .ch1 .secdiv select {
+        width: 100%;
+        min-height: 40px;
+    }
+
+    .whole .sub1 .ch2 {
+        height: auto;
+        margin: 24px 0 0;
+    }
+
+    .whole .sub1 .ch2 .can1 {
+        height: auto;
+        min-height: 0;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .whole .sub1 .ch2 .can1 .can1sub1 {
+        flex: 0 0 64px;
+        width: 64px;
+        height: auto;
+        margin: 0;
+    }
+
+    .whole .sub1 .ch2 .can1 .can1sub1 img {
+        width: 56px;
+        height: 56px;
+        object-fit: cover;
+    }
+
+    .whole .sub1 .ch2 .can1 .can1sub2 {
+        width: auto;
+        height: auto;
+        min-width: 0;
+        flex: 1;
+    }
+
+    .whole .sub1 .ch2 .can1 .can1sub2 h3 {
+        margin-top: 0;
+        font-size: 1.15rem !important;
+    }
+
+    .whole .sub1 .ch2 .can1 .can1sub2 .fulldiv {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .whole .sub1 .ch2 .can1 .can1sub2 .fulldiv .fullch {
+        margin: 0;
+    }
+
+    .whole .sub1 .ch2 .can1 .can1sub2 .fulldiv .fullch button {
+        width: auto !important;
+        padding: 4px 8px;
+    }
+
+    .whole .sub2 input,
+    .whole .sub2 select {
+        width: 100%;
+        min-height: 42px;
+        margin: 8px 0 16px;
+    }
+
+    .whole .lstdiv {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
 
 
