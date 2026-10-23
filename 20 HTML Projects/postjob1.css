@@ -1,101 +1,157 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #F0F3FA;
+    background-color: #f0f3fa;
 }
 
 .pjall {
-    height: 800px;
-    width: 60%;
-    background-color: #F0F3FA;
-    margin-left: 20%;
-    margin-top: 70px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
+    width: min(900px, calc(100% - 32px));
+    margin: 48px auto 64px;
 }
 
-.pjall h3{
-    margin-left: 40%;
+.postjob-heading {
+    margin-bottom: 24px;
 }
 
-.pjall h6 {
-    margin-left: 34%;
-    margin-bottom: 50px;
-    opacity: 70%;
+.postjob-heading h1 {
+    margin: 0 0 8px;
+    color: #222b3a;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.postjob-heading p {
+    margin: 0;
+    color: #596579;
+}
+
+.plan-list {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .pjall .prd-1 {
-    height: 170px;
-    background-color: #FFFFFF;
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 5px;
-    border-radius: 10px;
+    align-items: flex-start;
+    gap: 20px;
+    min-height: 130px;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #dce2ec;
+    border-radius: 8px;
 }
 
-.pjall .prd-1 .ps-1-1 {
-    width: 15%;
-    height: 100%;
-    padding-top: 40px;
+.pjall .ps-1-1 {
+    flex: 0 0 90px;
 }
 
-.pjall .prd-1 .ps-1-1 p {
-    background-color: #A0A7BA;
-    height: 30px;
-    width: 70px;
-    font-size: small;
-    padding: 5px;
-    padding-left: 20px;
-    color: white;
+.pjall .ps-1-1 p {
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #667085;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pjall .ps-1-1 .paid-price {
+    background-color: #176b60;
+}
+
+.pjall .ps-1-2 {
+    flex: 1;
+    min-width: 0;
+}
+
+.plan-choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.plan-choice input {
+    width: 18px;
+    height: 18px;
+    accent-color: #176b60;
+}
+
+.plan-choice label {
+    color: #222b3a;
+    font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
-.pjall .prd-1 .ps-1-2 {
-    width: 85%;
-    height: 100%;
-    padding-top: 40px;
+.pjall .ps-1-2 p,
+.pjall .ps-1-2 ul {
+    margin: 0;
+    color: #596579;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
-.pjall .prd-1 .ps-1-2 p {
-    opacity: 70%;
+.pjall .ps-1-2 ul {
+    margin-top: 8px;
+    padding-left: 20px;
 }
 
-.pjall .prd-1 .ps-1-2 ul {
-    opacity: 80%;
-}
-
-input[type="checkbox"] {
-    transform: scale(1.5);
-    margin-left: 10px;
-}
-
-label {
-    font-size: 18px;
-    margin-left: 15px;
-}
-
-p{
-    padding: 10px;
-    font-size: small;
+.pjall .prd-5 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
 }
 
 .pjall .prd-5 button {
-    height: 35px;
-    width: 100px;
-    border: none;
-    border-radius: 50px;
-    background-color: blueviolet;
-    font-size: small;
+    min-height: 44px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #176b60;
+    color: #fff;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: aliceblue;
-    margin-left: 40%;
-    margin-top: 30px;
+    cursor: pointer;
+}
+
+.pjall .prd-5 button:hover {
+    background-color: #10554c;
+}
+
+.pjall .prd-5 button:focus-visible,
+.plan-choice input:focus-visible {
+    outline: 3px solid #172554;
+    outline-offset: 3px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 480px) {
+    .pjall {
+        margin-top: 32px;
+    }
+
+    .pjall .prd-1 {
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .pjall .ps-1-1 {
+        flex-basis: 72px;
+    }
 }
 
 

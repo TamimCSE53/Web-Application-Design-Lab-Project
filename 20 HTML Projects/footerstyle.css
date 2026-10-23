@@ -9,16 +9,22 @@ body{
 }
 
 .div1{
-    height: 541px;
-    background-image: url(/background03.jpg);
-    padding-top: 25px;
-    padding-right: 70px;
+    height: auto;
+    min-height: 541px;
+    background-color: #1f2334;
+    background-image: url("background03.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 25px clamp(16px, 5vw, 70px);
 }
 
 .div1 .subdiv1{
     padding-bottom: 25px;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
     flex-direction: row;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -38,14 +44,16 @@ body{
 
 
 .div1 .subdiv1 img{
-    height: 25px;
-    margin-right: 50%;
+    width: min(160px, 36vw);
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
 }
 
 .div1 .line{
     border: 0;
     height: 1px;
-    margin-right: -70px;
+    margin-right: 0;
     background-color: aliceblue;
     opacity: 10%;
 }
@@ -55,30 +63,30 @@ body{
 }
 
 .div1 .subdiv2 .chdiv1{
-    height: 330px;
+    height: auto;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .div1 .subdiv2 .chdiv1 .gs1{
-    padding-left: 7%;
-    height: 320px;
-    width: 250px;
-    padding-top: 35px;
-    padding-right: -100px;
+    flex: 1 1 180px;
+    min-width: 0;
+    height: auto;
+    padding: 28px 12px;
 }
 
 .div1 .subdiv2 .chdiv1 .gs2, .gs3{
-    height: 330px;
-    width: 320px; 
-    padding: 35px;
-    padding-left: 5%;
+    flex: 1 1 180px;
+    min-width: 0;
+    height: auto;
+    padding: 28px 12px;
 }
 
 .div1 .subdiv2 .chdiv1 .gs3{
-    padding-left: 3%;
+    padding-left: 12px;
 }
 
 
@@ -99,10 +107,10 @@ body{
 }
 
 .div1 .subdiv2 .chdiv1 .gs4{
-    height: 330px;
-    width: 365px; 
-    padding: 35px;
-    padding-left: 40px;
+    flex: 1 1 220px;
+    min-width: 0;
+    height: auto;
+    padding: 28px 12px;
 }
 
 .div1 .subdiv2 .chdiv1 .gs4 .icon {
@@ -123,9 +131,9 @@ body{
 .div1 .subdiv2 .chdiv1 .gs4 input{
     border-radius: 20px;
     padding-left: 20px;
-    width: 90%;
+    width: 100%;
     border: none;
-    height: 11%;
+    min-height: 40px;
     margin-top: 30px;
 }
 
@@ -133,11 +141,14 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .div1 .subdiv3 .ls1, .ls2{
 
-    width: 50%;
+    width: auto;
+    flex: 1 1 280px;
     font-weight: 600;
     font-style: normal;
 }
@@ -152,8 +163,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 40px;
-    margin-left: 100px ;
+    margin-top: 20px;
+    margin-left: 0;
 }
 
 .div1 .subdiv3 .ls2 a{
@@ -162,6 +173,44 @@ body{
     padding: 10px;
     font-size: small;
     margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .div1 .subdiv1 {
+        justify-content: center;
+    }
+
+    .div1 .subdiv1 img {
+        flex: 0 0 auto;
+        width: min(160px, 70vw);
+        margin: 0 auto 8px;
+    }
+
+    .div1 .subdiv2 .chdiv1 {
+        gap: 0 12px;
+    }
+
+    .div1 .subdiv2 .chdiv1 .gs1,
+    .div1 .subdiv2 .chdiv1 .gs2,
+    .div1 .subdiv2 .chdiv1 .gs3,
+    .div1 .subdiv2 .chdiv1 .gs4 {
+        flex-basis: calc(50% - 12px);
+        padding: 20px 4px;
+    }
+
+    .div1 .subdiv3 .ls1,
+    .div1 .subdiv3 .ls2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div1 .subdiv3 .ls2 {
+        flex-wrap: wrap;
+    }
+
+    .div1 .subdiv3 .ls2 a {
+        margin-top: 0;
+    }
 }
 
 .div1 .subdiv3 .ls1 p{

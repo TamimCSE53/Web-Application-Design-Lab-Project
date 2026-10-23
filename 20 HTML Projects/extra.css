@@ -1,7 +1,19 @@
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    margin: 0;
+    padding: 24px 16px;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background-size: 200% 200%;
     animation: gradientBackground 5s ease infinite;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 @keyframes gradientBackground {
@@ -21,7 +33,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: min(100%, 420px);
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -63,19 +75,19 @@ body {
 .cont2 label {
     margin-bottom: 5px;
     font-size: small;
-    margin-left: 20px;
+    margin-left: 0;
     font-weight: 500;
     color: rgb(98, 68, 126);
 }
 
 .cont2 input {
+    width: 100%;
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
     height: 35px;
-    margin-left: 20px;
-    width: 80%;
+    margin-left: 0;
     transition: border-color 0.3s ease;
 }
 
@@ -92,9 +104,9 @@ body {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    height: 35px;
-    margin-left: 100px;
-    width: 40%;
+    min-height: 44px;
+    margin-left: 0;
+    width: 100%;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -104,4 +116,19 @@ body {
     font-weight: 600;
     border: 1px solid #007bff;
     transform: scale(1.05);
+}
+
+.cont2 button:focus-visible,
+.cont2 input:focus-visible {
+    outline: 3px solid #172554;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body,
+    .cont2,
+    .cont2 h2,
+    .cont2 form {
+        animation: none;
+    }
 }

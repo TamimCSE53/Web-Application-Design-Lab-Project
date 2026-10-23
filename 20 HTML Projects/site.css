@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: site-page-enter 320ms ease-out both;
+}
+
+a[href],
+button,
+input,
+select,
+textarea,
+.can1,
+.comli1,
+.box,
+.prd-1,
+.card,
+.readmore {
+    transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+a[href]:hover {
+    text-decoration-thickness: 2px;
+}
+
+button:not(:disabled):hover,
+.site-subscribe:hover {
+    transform: translateY(-2px);
+}
+
+.can1:hover,
+.comli1:hover,
+.box:hover,
+.prd-1:hover,
+.card:hover,
+.readmore:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+a[href]:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #1c7468;
+    outline-offset: 3px;
+}
+
+.site-unavailable {
+    color: inherit;
+    cursor: default;
+    opacity: 0.65;
+    text-decoration: none;
+}
+
+.site-status {
+    margin: 8px 0;
+    color: #176b60;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.site-subscribe {
+    display: inline-grid;
+    width: 40px;
+    min-height: 40px;
+    place-items: center;
+    margin-left: 6px;
+    border: 0;
+    border-radius: 50%;
+    background: #176b60;
+    color: #fff;
+    cursor: pointer;
+}
+
+.site-reveal {
+    opacity: 0;
+    transform: translateY(14px);
+}
+
+.site-reveal.site-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes site-page-enter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .site-reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        display: inline-flex;
+    }
+
+    .navbar-collapse:not(.show) {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+        padding: 16px;
+        background: #fff;
+    }
+}

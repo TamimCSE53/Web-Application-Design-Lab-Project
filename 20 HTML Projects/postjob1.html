@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>postjob</title>
+    <script defer src="site.js"></script>
     <link rel="stylesheet" href="candidates.css">
     <link rel="stylesheet" href="footerstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +15,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="postjob1.css">
-    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
     <div style="width: 100%; height: 68px; background-color: #ffffff;">
         <nav class="navbar navbar-expand-lg shadow-0 border-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!"><img src="/header-logo.png"</i></a>
+                <a class="navbar-brand" href="hero.html"><img src="header-logo.png" alt="JobPress"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -91,12 +91,12 @@
                     <!-- Get Started button -->
                     <div class="battan">
                         <li class="nav-item">
-                        <a href="/postjob1.html">
+                        <a href="postjob1.html">
                         <button type="button" class="btn btn-primary ms-3" style="border-radius: 20px 0px 0px 20px;margin-right: 10px; height: 40px; padding-top: 10px;">Post a Job</button>
                     </a>
                     </li>
                     <li style="margin-left: -5px;" class="nav-item">
-                        <a href="/signup.html">
+                        <a href="signup.html">
                             <button type="button" class="btn btn-primary ms-1" style="border-radius: 0px 20px 20px 0px; margin-right: 10px; height: 40px; padding-top: 10px;">Sign Up</button>
                         </a>
                     </li>
@@ -133,69 +133,40 @@
 
 
 
-    <div class="pjall">
-        <div>
-            <h3>Post A Job</h3>
-            <h6>Step 1: Choose Your Pricing Plan</h6>
-        </div>
-        
-
-        <div class="prd-1">
-            <div class="ps-1-1">
-                <p>FREE</p>
-            </div>
-            <div class="ps-1-2">
-                <input id="ok" type="checkbox">
-                <label for="ok">Pricing plan 1</label>
-                <br>
-                <p>
-                    <i>
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eu velit cursus, tempor ipsum in, tempus lectus. Nullam tempus nisi id nisl luctus, non tempor justo molestie.
-                    </i>
-                </p>
-            </div>
-        </div>
-        <div style="height: 250px;" class="prd-1">
-            <div class="ps-1-1">
-                <p style="background-color: blueviolet;">$39</p>
-            </div>
-            <div class="ps-1-2">
-                <input id="ok" type="checkbox">
-                <label for="ok">Pricing plan 2</label>
-                <br>
-                <p>
-                    <i>
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eu velit cursus, tempor ipsum in, tempus lectus. Nullam tempus nisi id nisl luctus, non tempor justo molestie.
-                    </i>
-                </p>
-                <ul style="font-size: 15px;">
-                    <li>1 Job posting</li>
-                    <li>No featued job</li>
-                    <li>1 month displayed</li>
-                </ul>
-            </div>
-
-        </div>
-        <div class="prd-1">
-            <div class="ps-1-1">
-                <p>$100</p>
-            </div>
-            <div class="ps-1-2">
-                <input id="ok" type="checkbox">
-                <label for="ok">Pricing plan 3</label>
-                <br>
-                <p>
-                    <i>
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eu velit cursus, tempor ipsum in, tempus lectus. Nullam tempus nisi id nisl luctus, non tempor justo molestie.
-                    </i>
-                </p>
-            </div>
-        </div>
-
-        <div class="prd-5">
-            <a href="/postjob2.html"><button>Go to step 2</button></a>
-        </div>
-    </div>
+    <main class="pjall">
+        <header class="postjob-heading">
+            <h1>Post a Job</h1>
+            <p>Step 1: Choose your pricing plan</p>
+        </header>
+        <form class="plan-form" action="postjob2.html" method="get">
+            <fieldset class="plan-list">
+                <legend class="visually-hidden">Choose one pricing plan</legend>
+                <article class="prd-1">
+                    <div class="ps-1-1"><p>FREE</p></div>
+                    <div class="ps-1-2">
+                        <div class="plan-choice"><input id="plan-free" name="plan" type="radio" value="free" required><label for="plan-free">Pricing plan 1</label></div>
+                        <p>Start posting jobs at no cost.</p>
+                    </div>
+                </article>
+                <article class="prd-1">
+                    <div class="ps-1-1"><p class="paid-price">$39</p></div>
+                    <div class="ps-1-2">
+                        <div class="plan-choice"><input id="plan-standard" name="plan" type="radio" value="standard"><label for="plan-standard">Pricing plan 2</label></div>
+                        <p>One job posting, displayed for one month.</p>
+                        <ul><li>1 job posting</li><li>Standard listing</li><li>1 month displayed</li></ul>
+                    </div>
+                </article>
+                <article class="prd-1">
+                    <div class="ps-1-1"><p>$100</p></div>
+                    <div class="ps-1-2">
+                        <div class="plan-choice"><input id="plan-premium" name="plan" type="radio" value="premium"><label for="plan-premium">Pricing plan 3</label></div>
+                        <p>Promote your opening with a premium job listing.</p>
+                    </div>
+                </article>
+            </fieldset>
+            <div class="prd-5"><button type="submit">Go to step 2</button></div>
+        </form>
+    </main>
 
 
 
@@ -207,7 +178,7 @@
     <div class="div1">
 
         <div class="subdiv1">
-            <img src="/footer-logo.png">
+            <img src="footer-logo.png" alt="JobPress">
             <a href="#">HOME</a>
             <a href="#">ABOUT</a>
             <a href="#">BROWSE JOB</a>

@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!--CSS LINKS -->
-    <link rel ="stylesheet" href="/Files/hero.css">
-    <link rel="stylesheet" href="/Files/header.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footerstyle.css">
     <link rel="stylesheet" href="contact.css">
 
@@ -111,6 +111,7 @@ background: transparent;
 }
     </style>
   <title>Contact Us</title>
+  <script defer src="site.js"></script>
 </head>
 
 <body>
@@ -118,8 +119,8 @@ background: transparent;
    <!-- Navbar -->
     
     <nav class="navbar navbar-expand-lg shadow-0 border-dark">
-    <div class="container" style="background-color: rgb(255, 255, 255); margin-left: 500px; height:60px;">
-        <a class="navbar-brand" href="#!"><img src="/Image/logo.png" style="width: 135px; height:34px; margin-left:-480px">
+    <div class="container">
+      <a class="navbar-brand" href="hero.html"><img src="Image/logo.png" alt="JobPress"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -128,10 +129,10 @@ background: transparent;
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:50px;">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link" style="margin-top: -21px;" href="/Files/Hero.html">Home</a>
+                <a class="nav-link" href="hero.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Files/contact.html">About</a>
+                <a class="nav-link" href="contact.html">About</a>
             </li>
             <!-- Candidates dropdown -->
             <li class="nav-item dropdown">
@@ -139,7 +140,7 @@ background: transparent;
                     Candidates
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="candidatesDropdown">
-                    <li><a class="dropdown-item" href="/Files/candidates.html">Browse Candidates</a></li>
+                    <li><a class="dropdown-item" href="candidates.html">Browse Candidates</a></li>
                     <li><a class="dropdown-item" href="#">Browse Companies</a></li>
                     <li><a class="dropdown-item" href="#">Job Listing</a></li>
                     <li><a class="dropdown-item" href="#">Job Details</a></li>
@@ -155,7 +156,7 @@ background: transparent;
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="companiesDropdown">
                     <li><a class="dropdown-item" href="#">Browse Companies</a></li>
-                    <li><a class="dropdown-item" href="/Files/postjob1.html">Post a Job</a></li>
+                    <li><a class="dropdown-item" href="postjob1.html">Post a Job</a></li>
                     <li><a class="dropdown-item" href="#">Employer Dashboard</a></li>
                 </ul>
             </li>
@@ -177,17 +178,17 @@ background: transparent;
                     Pages
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <li><a class="dropdown-item" href="/Files/helptab.html">Need Help?</a></li>
-                    <li><a class="dropdown-item" href="/Files/contact.html">Contact Us</a></li>
+                    <li><a class="dropdown-item" href="helptab.html">Need Help?</a></li>
+                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
                     <li><a class="dropdown-item" href="#">Pricing Plans</a></li>
                 </ul>
             </li>
             <!-- Get Started button -->
             <div class="battan">
-                <li class="nav-item"><a href="/Files/postjob1.html"><button type="button" class="btn btn-primary ms-3" style="border-radius: 20px 0px 0px 20px;width:150px">Post a Job</button></a>
+                <li class="nav-item"><a href="postjob1.html"><button type="button" class="btn btn-primary ms-3" style="border-radius: 20px 0px 0px 20px;width:150px">Post a Job</button></a>
                 
             </li>
-            <li style="margin-left: -5px;" class="nav-item"><a href="/Files/signup.html"><button type="button" class="btn btn-primary ms-1" style="border-radius: 0px 20px 20px 0px; width:100px;margin-right: 10px">Log In</button></a>
+            <li style="margin-left: -5px;" class="nav-item"><a href="signup.html"><button type="button" class="btn btn-primary ms-1" style="border-radius: 0px 20px 20px 0px; width:100px;margin-right: 10px">Log In</button></a>
                 
             </li>
             </div>
@@ -204,7 +205,7 @@ background: transparent;
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.483216307976!2d90.42360131152721!3d23.801410186725864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7bba6ffeb31%3A0xdb02a491b63b8494!2sUniversity%20of%20Information%20Technology%20and%20Sciences%20(UITS)!5e0!3m2!1sen!2sbd!4v1715629491714!5m2!1sen!2sbd"
     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade" class="mapp"></di>"</iframe>
+    referrerpolicy="no-referrer-when-downgrade" class="mapp" title="Map to the University of Information Technology and Sciences"></iframe>
   <br>
   <!--map section ends-->
   <div class="main">
@@ -233,15 +234,15 @@ background: transparent;
 
           </div>
           <label for="name"><strong>YOUR Name*</strong></label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
           <label for="email"><strong>YOUR Email*</strong></label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
         </div>
         <div class="form-group">
           <label for="message"><strong>YOUR Message*</strong></label>
-          <textarea class="form-control" id="message" rows="3" placeholder="here gose your message"></textarea>
+          <textarea class="form-control" id="message" rows="3" placeholder="Write your message" required></textarea>
         </div>
         <button type="submit" class="batton">SEND US</button>
       </form>
@@ -255,11 +256,11 @@ background: transparent;
         <div class="div1">
 
         <div class="subdiv1">
-            <img src="/Image/logo white.png" style="width: 100px;">
-            <a href="/Files/Hero.html">HOME</a>
+            <img src="Image/logo white.png" alt="JobPress">
+            <a href="hero.html">HOME</a>
             <a href="#">ABOUT</a>
             <a href="#">BROWSE JOB</a>
-            <a href="/Files/candidates.html">BROWSE CANDIDATES</a>
+            <a href="candidates.html">BROWSE CANDIDATES</a>
             <a href="#">CONTACT</a>
         </div>
 
